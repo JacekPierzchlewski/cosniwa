@@ -1,0 +1,11 @@
+__*
+*.o
+*.a
+examples/example1
+examples/example2
+examples/example3A
+examples/example3B
+examples/example4
+examples/example5A
+examples/example5B
+examples/case1
