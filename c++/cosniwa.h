@@ -1,8 +1,8 @@
 /*
- * cosniwa.h [version 1.0]
+ * cosniwa.h [version 1.0r1]
  * CoSniWa:  COde SNIppet stopWAtch
  *
- * version 1.0 ready on 9 Mar 2017
+ * version 1.0r1 ready on 2 May 2017
  *
  * This is header for Code Snippet Stopwatch (CoSniWa) object.
  * CoSniWa is dedicated to profile code using time stamps.
@@ -14,6 +14,8 @@
  */
 #include <iostream>
 
+#ifndef COSNIWA_IS_DEFINED
+#define COSNIWA_IS_DEFINED 1
 
 class Cosniwa
 {
@@ -259,3 +261,5 @@ class Cosniwa
         std::string result_short();
         void resultc_short();
 };
+#endif
+
