@@ -11,13 +11,9 @@ Welcome to Cosniwa's documentation!
 
 1. About *Cosniwa*
 ===================================
-*Cosniwa* [(Co)de (sni)ppet stop(wa)tch] is a tool for profiling Python (3)
-and C++ code using timestamps.
-It is reasonably easy to use, it can profile multi-class,
-mixed C++ / Python code.
+*Cosniwa* [(Co)de (sni)ppet stop(wa)tch] is a tool for profiling code using timestamps.
 *Cosniwa* uses timestamps, so you CAN NOT expect nanosecond precision,
 but it is precise enough for most of the applications.
-It is written entirely in C++ with a port to Python.
 
 Read more on `www.speedupcode.com  <http://www.speedupcode.com>`_.
 
@@ -30,10 +26,27 @@ Read more on `www.speedupcode.com  <http://www.speedupcode.com>`_.
 
 1.2 Languages
 +++++++++++++++++++++++++++++++++++
-*Cosniwa* can be used with C++ and with Python 3.
-There is a plan to add support for C. |br|
+Currently (mid 2017) *Cosniwa* can be used with the following languages:
 
-*Cosniwa* is written in C++.
+    **1. C++**.  The first version of *Cosniwa* was written in C++.
+    *Cosniwa* can be used with both GCC and Clang compilers. Timing precision
+    below 10 us can be expected. |br|
+
+    **2. Python 3.** *Cosniwa* can be used with CPython interpreter
+    for Python 3. *Cosniwa* Python3 port uses *Cosniwa* C++ modules
+    via the Python-to-C++ interface provided by CPython. Timing
+    precision below 10 us can be expected.  |br|
+
+    **3. Octave.** *Cosniwa* can be used with GNU Octave. There are two
+    versions of *Cosniwa* prepared for Octave: |br|
+
+            - **C++ based**.  This version uses *Cosniwa* C++ modules via GNU Octave interface for modules written in C++. It is a recommended version which ensures highest possible timing precision (below 10 us). |br| |br|
+
+            - **Native**. This version uses GNU Octave functions to obtain timestamps. It should be used if modules written in C++ can not be used. Worse timing precision than for C++ modules can be expected, below 100 us.  |br|
+
+
+
+
 
 1.3 License
 +++++++++++++++++++++++++++++++++++
@@ -46,7 +59,7 @@ There is a plan to add support for C. |br|
 (`http://pierzchlewski.com <http://www.pierzchlewski.com/>`_) |br|
 email: jacek@pierzchlewski.com
 
-1.5 Download and install
+1.5 Download
 +++++++++++++++++++++++++++++++++++
 *Cosniwa* repository is hosted on `github.com  <https://github.com/jacekpierzchlewski/cosniwa/>`_.
 
@@ -56,17 +69,11 @@ Download *Cosniwa* `zipped <http://www.speedupcode.com/cosniwa/download/cosniwa-
 You can also download the zipped package
 `from Github <https://github.com/jacekpierzchlewski/cosniwa/archive/master.zip>`_.
 
-After downloading run 'make install' as superuser:
-
-:code:`# make install`  |br|
 
 
-
-
-
-.. include:: ./tutorial.rst
-.. include:: ./cases.rst
-.. include:: ./functions.rst
+.. include:: ./cpp.rst
+.. include:: ./python.rst
+.. include:: ./octave.rst
 
 
 
@@ -81,3 +88,7 @@ Indices and tables
 .. |br| raw:: html
 
    <br />
+
+.. |space| raw:: html
+
+   &nbsp
