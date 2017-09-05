@@ -206,7 +206,7 @@ the total execution time of a code snippet.
 
 
 
-4.2. Octave example1 [cOctave]: Two code snippets
+4.2. Octave example2 [cOctave]: Two code snippets
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Note::
@@ -316,7 +316,7 @@ the minimum and the maximum execution time of a code snippet.
 The columns 6th - 8th are printed only for code snippets which are called more than once.
 
 
-4.3. Octave example1 [cOctave]: Code registrations
+4.3. Octave example3 [cOctave]: Code registrations
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Note::
@@ -405,7 +405,7 @@ The main difference is the third column.
 It contains labels ("100 x add", "add") given to the code.
 
 
-4.4. Octave example1 [cOctave]: Add main time
+4.4. Octave example4 [cOctave]: Add main time
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
 .. Note::
